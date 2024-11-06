@@ -206,3 +206,77 @@ hr{
   margin: 0px;
   padding: 20px 0;
 }
+
+/* Existing styles here... */
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+  .navbar .nav-links a {
+    font-size: 0.9em;
+  }
+  .top-container h1 {
+    font-size: 4.5rem;
+  }
+  .middle-container h2 {
+    font-size: 2rem;
+  }
+  .skill-row {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-links {
+    margin: 10px 0;
+  }
+  .top-container h1 {
+    font-size: 3.5rem;
+  }
+  .top-container h2 {
+    font-size: 1.8rem;
+  }
+  .skill-row {
+    width: 90%;
+    text-align: center;
+  }
+  .skill-1, .skill-2 {
+    width: 40%;
+    float: none;
+    margin: 10px auto;
+  }
+  .profile-pic {
+    height: 150px;
+  }
+  .intro {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .skill-row {
+    width: 100%;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  .navbar .logo {
+    font-size: 1rem;
+  }
+  .copyright {
+    font-size: 0.5em;
+  }
+  .bottom-cloud, .top-cloud {
+    display: none;
+  }
+}
