@@ -207,25 +207,30 @@ hr{
   padding: 20px 0;
 }
 
-/* Existing styles here... */
+/* Base styles remain the same... */
 
-/* Media Queries for Responsiveness */
+/* Responsive Layout Enhancements */
 
+/* For large tablets and smaller laptops (1024px and below) */
 @media (max-width: 1024px) {
   .navbar .nav-links a {
     font-size: 0.9em;
   }
   .top-container h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .middle-container h2 {
     font-size: 2rem;
   }
   .skill-row {
-    width: 80%;
+    width: 85%;
+  }
+  .intro {
+    width: 60%;
   }
 }
 
+/* For tablets and smaller screens (768px and below) */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -234,49 +239,83 @@ hr{
     margin: 10px 0;
   }
   .top-container h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .top-container h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .skill-row {
     width: 90%;
     text-align: center;
   }
   .skill-1, .skill-2 {
-    width: 40%;
+    width: 100%;
     float: none;
-    margin: 10px auto;
+    margin: 10px 0;
   }
   .profile-pic {
     height: 150px;
+    width: auto;
   }
   .intro {
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  .skill-row {
-    width: 100%;
-  }
-  .btn {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
-  .navbar .logo {
-    font-size: 1rem;
-  }
-  .copyright {
-    font-size: 0.5em;
+    width: 85%;
   }
   .bottom-cloud, .top-cloud {
     display: none;
   }
 }
+
+/* For mobile phones (480px and below) */
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+
+  /* Headings and fonts */
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+
+  /* Main content containers */
+  .top-container {
+    padding-top: 100px;
+  }
+  .middle-container {
+    margin: 50px 0;
+  }
+  .skill-row {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  /* Profile section adjustments */
+  .profile-pic {
+    height: 120px;
+    width: auto;
+  }
+  .intro {
+    width: 90%;
+  }
+
+  /* Contact button */
+  .btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  /* Footer */
+  .footer-link {
+    font-size: 0.9em;
+  }
+  .copyright {
+    font-size: 0.7em;
+  }
+}
+
